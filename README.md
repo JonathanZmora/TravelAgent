@@ -13,6 +13,10 @@ I don't believe this will happen, but it's worth noting.
 
 If it does happen, waiting a minute will free the limit again.
 
+If for some reason the groq API key doesn't work (it might be taken down because it's on GitHub),
+
+I can easily provide a new one or you can easily generate a free one on https://console.groq.com/home
+
 ## Prerequisites:
 Python 3.10+ (3.12 recommended)
 
@@ -34,7 +38,10 @@ python -m venv venv
 #### 4) Install dependencies
 pip install -r requirements.txt
 
-#### 5) Run
+#### 5) Configure environment
+cp sample.env .env
+
+#### 6) Run
 python main.py
 
 
