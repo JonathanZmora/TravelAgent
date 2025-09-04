@@ -1,4 +1,17 @@
-# TravelAgent
+# TravelAgent CLI
+
+## Usage notes:
+The API keys provided in the .env file are completely free to use and I will disable
+
+Them after the assignment will be checked, so don't worry about that :)
+
+While the groq api key is free, it does have usage limits. 
+
+The daily usage limits are high, but per minute limits might be exceeded.
+
+I don't believe this will happen, but it's worth noting.
+
+If it does happen, waiting a minute will free the limit again.
 
 ## Prerequisites:
 Python 3.10+ (3.12 recommended)
