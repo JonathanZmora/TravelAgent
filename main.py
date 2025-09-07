@@ -19,7 +19,7 @@ memory = ConversationSummaryBufferMemory(
     max_token_limit=2000,
 )
 
-prompt = make_agent_prompt(show_reasoning=True)  # includes system + reasoning instructions + history + scratchpad
+prompt = make_agent_prompt(show_reasoning=False)  # includes system + reasoning instructions + history + scratchpad
 
 agent = create_tool_calling_agent(llm=llm, tools=tools, prompt=prompt)
 
@@ -27,7 +27,7 @@ agent_executor = AgentExecutor(
     agent=agent,
     tools=tools,
     memory=memory,
-    verbose=True
+    verbose=False
 )
 
 
@@ -54,3 +54,4 @@ def run():
 
 if __name__ == "__main__":
     run()
+
